@@ -123,6 +123,10 @@ public class DataCollector
 
 ---
 ## 📌 Roadmap
+Du kan se projektets fullständiga roadmap och backlog här:
+
+https://github.com/users/YAZM16/projects/3
+
 ✅ Kravspecifikation och design  
 🔲 Implementera datainsamling  
 🔲 Skapa dashboard och UI  
