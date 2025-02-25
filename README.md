@@ -1,145 +1,138 @@
-🚛 Lastbilssäkerhetssimulator
+# 🚛 Lastbilssäkerhetssimulator
 
-📌 Projektidé
+## 📌 Projektbeskrivning
+Detta projekt syftar till att utveckla en simulator för att analysera och visualisera data från säkerhetssystem i lastbilar. Genom att samla in realtidsdata från olika sensorer och loggfiler kan systemet identifiera potentiella säkerhetsrisker och förbättra effektiviteten i fordonsflottor.
 
-Detta projekt syftar till att utveckla en simulator för att samla in och analysera data från lastbilars säkerhetssystem. Målet är att förbättra förståelsen för systemprestanda och identifiera möjliga säkerhetsförbättringar.
+---
+## 📖 Bakgrund & Syfte
+Med den ökande automatiseringen och digitaliseringen inom transportindustrin blir säkerhetsaspekter allt viktigare. Lastbilar utrustas med avancerade säkerhetssystem som adaptiv farthållare, kollisionsvarningssystem och filhållningsassistans. För att säkerställa att dessa system fungerar optimalt krävs en plattform för datainsamling och analys.
 
-📖 Bakgrund & Syfte
+### Syfte
+- Förbättra fordonssäkerheten genom realtidsanalys
+- Identifiera systemfel och potentiella risker
+- Möjliggöra optimering av säkerhetssystem genom insikter från insamlad data
 
-Med den ökade automatiseringen inom transportsektorn blir säkerhetssystemen i lastbilar alltmer avancerade. Det finns ett växande behov av att analysera realtidsdata från sensorer och händelseloggar för att:
+---
+## 🎯 Vision & Mål
+### Vision
+Att utveckla en innovativ och användarvänlig simulator som möjliggör omfattande analys av säkerhetssystem i lastbilar.
 
-Optimera systemprestanda
+### Mål
+- Skapa en **plattform för realtidsdatainsamling**
+- Designa ett **intuitivt användargränssnitt** för analys och visualisering
+- Implementera **säker datahantering** och lagring
+- Möjliggöra **export av data** i CSV- och JSON-format
+- Skapa ett **notifikationssystem** för kritiska säkerhetslarm
 
-Upptäcka och förebygga potentiella fel
+---
+## 👥 Intressentkartläggning
+| Intressent | Roll |
+|------------|------|
+| **Fordonstillverkare** | Användare av systemet för att förbättra säkerhetslösningar |
+| **Transportföretag** | Optimering av säkerhet och effektivitet i fordonsflottor |
+| **Försäkringsbolag** | Riskanalys och skadeförebyggande åtgärder |
+| **Trafikmyndigheter** | Regelverk och säkerhetsstandarder |
+| **Fordonsingenjörer & tekniker** | Övervakning och felsökning av säkerhetssystem |
 
-Förbättra säkerheten på vägarna
+---
+## 📜 Kravspecifikation
+### ✅ Funktionella krav
+- Systemet ska kunna **samla in realtidsdata från sensorer**.
+- Användare ska kunna **generera och analysera rapporter**.
+- **Administratörer** ska kunna hantera användarroller och åtkomst.
+- Möjlighet att **exportera data** i CSV- och JSON-format.
+- Implementera ett **notifikationssystem** för säkerhetskritiska händelser.
+- **Filtreringsfunktionalitet** baserat på lastbilsmodell och säkerhetssystem.
+- Integration med **externa API:er** för datainsamling.
 
-Simulatorn ska möjliggöra en mer ingående analys och bidra till utvecklingen av framtida säkerhetssystem.
+### 🔒 Icke-funktionella krav
+- Skalbart system som kan hantera **upp till 10 000 samtidiga datapunkter**.
+- **Datasäkerhet och kryptering** vid lagring och överföring.
+- **Responsivt användargränssnitt** anpassat för olika enheter.
+- **Driftsäkerhet på minst 99,9% uptime**.
+- **Automatiserade säkerhetskopieringar** dagligen.
 
-🎯 Vision & Mål
+### 🎯 Prioritering enligt MoSCoW-metoden
+| Prioritet | Funktion |
+|-----------|-----------|
+| **Must** | Realtidsdatainsamling, användarhantering, rapportgenerering |
+| **Should** | Notifikationer, dataexport |
+| **Could** | Extern API-integration |
+| **Won't** | AI-baserad analys i första versionen |
 
-Vision
-
-Att utveckla en avancerad och användarvänlig simulator för insamling och analys av data från lastbilars säkerhetssystem.
-
-Mål
-
-Skapa en plattform för realtidsdatainsamling
-
-Designa ett användarvänligt gränssnitt för rapportering och analys
-
-Implementera säker datahantering och lagring
-
-👥 Intressentkartläggning
-
-Intressent
-
-Roll
-
-Kunder
-
-Fordonstillverkare, transportföretag
-
-Slutanvändare
-
-Fordonsingenjörer, tekniker, analytiker
-
-Övriga intressenter
-
-Regelverksskapare, försäkringsbolag
-
-📜 Kravspecifikation
-
-✅ Funktionella krav
-
-Systemet ska kunna samla in data från sensorer i realtid.
-
-Användare ska kunna visa rapporter och analyser.
-
-Administratörer ska kunna hantera användare och roller.
-
-Exportfunktion för data i CSV- och JSON-format.
-
-Notifikationssystem vid kritiska fel.
-
-Möjlighet att filtrera data baserat på lastbilsmodell och säkerhetssystem.
-
-Integration med externa API:er för ytterligare datakällor.
-
-🔒 Icke-funktionella krav
-
-Systemet ska kunna hantera upp till 10 000 samtidiga datapunkter.
-
-Data ska krypteras vid lagring och överföring.
-
-Responsivt användargränssnitt som fungerar på alla enheter.
-
-Minst 99,9% uptime.
-
-Automatiska säkerhetskopior varje dag.
-
-🎯 Prioritering (MoSCoW)
-
-Prioritet
-
-Funktion
-
-Must
-
-Datainsamling, användarhantering, rapportgenerering
-
-Should
-
-Notifikationer, dataexport
-
-Could
-
-Integration med externa API:er
-
-Won't
-
-AI-baserad analys i första versionen
-
-🚀 Kom igång
-
+---
+## 🚀 Kom igång
 För att köra projektet lokalt, följ dessa steg:
-
+```sh
 # Klona projektet
 $ git clone https://github.com/ditt-repo/lastbil-sakerhetssimulator.git
 
 # Navigera till projektmappen
 $ cd lastbil-sakerhetssimulator
 
-# Installera beroenden
-$ npm install  # eller pip install -r requirements.txt beroende på teknikval
+# Bygg och kör projektet
+$ dotnet build
+$ dotnet run
+```
 
-# Starta applikationen
-$ npm start  # eller dotnet run, python main.py, etc.
+---
+## 🛠️ Teknologier
+Projektet är byggt med följande teknologier:
+- **Backend:** C# .NET 7 / ASP.NET Core
+- **Databas:** SQL Server
+- **Frontend:** Blazor
+- **Autentisering:** OAuth / JWT
+- **Hosting:** Azure / AWS
 
-🛠️ Teknologier
+---
+## 💻 Exempel på kod
+Nedan visas ett kodexempel som illustrerar hur sensorinformation samlas in och lagras i databasen:
 
-Projektet bygger på följande teknologier:
+```csharp
+public class SensorData
+{
+    public int Id { get; set; }
+    public string SensorType { get; set; }
+    public double Value { get; set; }
+    public DateTime Timestamp { get; set; }
+}
 
-Backend: C# .NET / Node.js / Python (beroende på val)
+public class DataCollector
+{
+    private readonly DatabaseContext _context;
 
-Databas: SQL Server / MongoDB
+    public DataCollector(DatabaseContext context)
+    {
+        _context = context;
+    }
 
-Frontend: React.js / Blazor / Angular
+    public async Task SaveSensorData(string type, double value)
+    {
+        var data = new SensorData
+        {
+            SensorType = type,
+            Value = value,
+            Timestamp = DateTime.UtcNow
+        };
 
-Autentisering: OAuth / JWT
+        _context.SensorData.Add(data);
+        await _context.SaveChangesAsync();
+    }
+}
+```
 
-Hosting: Azure / AWS
+---
+## 📌 Roadmap
+✅ Kravspecifikation och design  
+🔲 Implementera datainsamling  
+🔲 Skapa dashboard och UI  
+🔲 Testning och prestandaoptimering  
+🔲 Release och dokumentation  
 
-📌 Roadmap
-
-✅ Färdigställ kravspecifikation🔲 Implementera datainsamling🔲 Skapa dashboard och UI🔲 Testning och prestandaoptimering🔲 Release och dokumentation
-
-📝 Licens
-
-Detta projekt är licensierat under MIT-licensen – se LICENSE för mer information.
-
-📩 Kontakt
-
-Har du frågor eller vill bidra? Kontakta oss via GitHub Issues!
-
+---
+## 📝 Licens
+Detta projekt är skpat utan Licens.
+---
+## 📩 Kontakt
+Har du frågor eller vill bidra? Kontakta oss via [GitHub Issues](https://github.com/ditt-repo/issues)!
 
